@@ -25,10 +25,10 @@ export default async function About() {
         <div className="text-[10px] md:text-xs font-bold tracking-widest text-[#d3e97a] uppercase mb-6 md:mb-8">
           Editorial Engineering
         </div>
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight mb-6">
           The Digital Artisan:<br />Behind the Code.
         </h1>
-        <p className="text-lg md:text-xl lg:text-2xl text-zinc-400 max-w-2xl leading-relaxed font-light">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-zinc-400 max-w-2xl leading-relaxed font-light">
           Crafting high-fidelity interfaces through the lens of structural integrity and aesthetic warmth.
         </p>
       </section>
@@ -43,10 +43,10 @@ export default async function About() {
           </h2>
         </div>
         <div className="lg:col-span-9 flex flex-col gap-8 md:gap-12">
-          <h3 className="text-2xl md:text-4xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-white">
+          <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-5xl font-medium leading-[1.2] tracking-tight text-white">
             {profile?.philosophy || "I believe software should feel like a bespoke timepiece—precise in its mechanics, yet human in its touch."}
           </h3>
-          <div className="flex flex-col gap-4 md:gap-6 text-zinc-400 text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl font-light">
+          <div className="flex flex-col gap-4 md:gap-6 text-zinc-400 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed max-w-3xl font-light">
             {paragraphs.length > 0 ? (
               paragraphs.map((p: string, i: number) => <p key={i}>{p}</p>)
             ) : (
@@ -72,14 +72,14 @@ export default async function About() {
       <section className="bg-[#141414] border-y border-zinc-800 w-full py-16 md:py-24">
         <div className="px-6 max-w-7xl mx-auto w-full">
           <div className="mb-12 md:mb-16">
-            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-4 tracking-tight">Core Philosophy</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 tracking-tight">Core Philosophy</h2>
             <div className="w-12 md:w-16 h-1 bg-[#d3e97a]"></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12 lg:gap-16">
             <div className="flex flex-col gap-4 md:gap-5">
               <svg className="w-5 h-5 md:w-6 md:h-6 text-[#d3e97a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-              <h3 className="text-lg md:text-xl font-bold text-white tracking-tight">Precision</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white tracking-tight">Precision</h3>
               <p className="text-zinc-400 leading-relaxed text-sm md:text-base">
                 Meticulous attention to spacing, typography scales, and structural hierarchy. Ensuring a layout that breathes and functions with absolute clarity.
               </p>
@@ -87,7 +87,7 @@ export default async function About() {
             
             <div className="flex flex-col gap-4 md:gap-5">
               <svg className="w-5 h-5 md:w-6 md:h-6 text-[#d3e97a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="M5 5l1.5 1.5"/><path d="M17.5 17.5L19 19"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="M5 19l1.5-1.5"/><path d="M17.5 6.5L19 5"/></svg>
-              <h3 className="text-lg md:text-xl font-bold text-white tracking-tight">Intentionality</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white tracking-tight">Intentionality</h3>
               <p className="text-zinc-400 leading-relaxed text-sm md:text-base">
                 No element exists without a purpose. We reject decorative clutter in favor of meaningful interactions that guide the user journey.
               </p>
@@ -95,7 +95,7 @@ export default async function About() {
             
             <div className="flex flex-col gap-4 md:gap-5">
               <svg className="w-5 h-5 md:w-6 md:h-6 text-[#d3e97a]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-              <h3 className="text-lg md:text-xl font-bold text-white tracking-tight">Performance</h3>
+              <h3 className="text-base sm:text-lg md:text-xl font-bold text-white tracking-tight">Performance</h3>
               <p className="text-zinc-400 leading-relaxed text-sm md:text-base">
                 Beauty is nothing without speed. High-end experiences are built on optimized assets and lightweight, semantic codebases.
               </p>
@@ -145,7 +145,7 @@ export default async function About() {
       <section className="px-6 py-16 md:py-24 bg-[#121212] border-y border-zinc-800 w-full relative">
         <div className="max-w-4xl mx-auto flex flex-col w-full relative">
           <div className="text-center mb-16 md:mb-20">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">Milestones</h2>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-4">Milestones</h2>
             <div className="text-[10px] md:text-xs font-bold tracking-widest text-[#d3e97a] uppercase">
               The Timeline of Growth
             </div>

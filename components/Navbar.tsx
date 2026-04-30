@@ -103,7 +103,7 @@ class NavbarComponent extends Component<NavbarProps, NavbarState> {
             <Link 
               href="/#home" 
               onClick={() => { this.setScrolledSection("home"); this.closeMenu(); }} 
-              className="font-bold text-lg md:text-xl uppercase"
+              className="font-bold text-base sm:text-lg md:text-xl uppercase"
             >
               Ibrahim Ezzeldin
             </Link>

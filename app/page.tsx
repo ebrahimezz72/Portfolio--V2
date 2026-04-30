@@ -34,12 +34,12 @@ export default async function Home() {
         1. HERO SECTION
         ========================================
       */}
-      <section className="px-6 py-16 md:py-24 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center lg:text-left" id="home">
+      <section className="px-6 py-16 md:py-24 lg:py-32 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-20 lg:gap-32 items-center text-center lg:text-left" id="home">
         <div className="flex flex-col gap-6 items-center lg:items-start">
           <div className="text-[10px] md:text-xs font-bold tracking-widest text-zinc-500 uppercase">
             {profile?.tagline || "Editorial Engineering"}
           </div>
-          <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-white mb-4">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight text-white mb-4">
             {firstName} {lastName}<br />
             <span className="text-zinc-500 whitespace-nowrap">
               {titleParts.map((part: string, i: number) => (
@@ -50,7 +50,7 @@ export default async function Home() {
               ))}
             </span>
           </h1>
-          <p className="text-zinc-400 text-base md:text-lg max-w-md leading-relaxed font-light mb-4 mx-auto lg:mx-0">
+          <p className="text-zinc-400 text-base sm:text-lg md:text-xl max-w-md leading-relaxed font-light mb-4 mx-auto lg:mx-0">
             {profile?.bio || "Crafting high-fidelity interfaces through the lens of structural integrity and aesthetic warmth."}
           </p>
           <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
@@ -98,7 +98,7 @@ export default async function Home() {
       <section className="px-6 py-16 md:py-24 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
         <div className="lg:col-span-5 flex flex-col gap-8 md:gap-12">
           <div>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-white mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
               The Digital Artisan Philosophy
             </h2>
             <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
@@ -122,7 +122,7 @@ export default async function Home() {
         <div className="lg:col-span-7">
            <div className="bg-[#181818] border border-zinc-800 p-8 md:p-14 lg:p-16 rounded-2xl relative shadow-2xl">
               <svg className="text-zinc-800 w-16 h-16 md:w-20 md:h-20 absolute top-4 left-4 md:top-6 md:left-6 opacity-30 pointer-events-none" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/></svg>
-              <h3 className="text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.3] md:leading-[1.4] text-white relative z-10 italic">
+              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium leading-[1.3] md:leading-[1.4] text-white relative z-10 italic">
                 &quot;{profile?.philosophy || "Engineering is the foundation, but the interface is where the human connection happens. I build bridges that feel like homes."}&quot;
               </h3>
               <div className="mt-8 md:mt-10 flex items-center gap-4 relative z-10">
@@ -143,7 +143,7 @@ export default async function Home() {
           <div className="text-[10px] md:text-xs font-bold tracking-widest text-zinc-500 uppercase mb-3">
             TOOL KIT
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-white mb-2">Mastered Utilities</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-2">Mastered Utilities</h2>
         </div>
         
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
@@ -186,7 +186,7 @@ export default async function Home() {
           <div className="text-[10px] md:text-xs font-bold tracking-widest text-zinc-500 uppercase mb-3">
             VALIDATION
           </div>
-          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-white mb-2">Certificates & Achievements</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-2">Certificates & Achievements</h2>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
@@ -227,7 +227,7 @@ export default async function Home() {
       <section className="px-6 py-20 md:py-32 max-w-7xl mx-auto w-full">
         <div className="mb-16 md:mb-24 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-6">
           <div className="max-w-2xl">
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">Selected Works</h2>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mb-4">Selected Works</h2>
             <p className="text-zinc-400 text-sm md:text-base leading-relaxed">
               A curated portfolio of digital artifacts where technical excellence meets aesthetic beauty.
             </p>
@@ -269,7 +269,7 @@ export default async function Home() {
                     <div className="text-[10px] font-bold tracking-widest text-zinc-500 uppercase mb-4">
                       {project.type} Development • {project.created_at ? new Date(project.created_at).getFullYear() : '2024'}
                     </div>
-                    <h3 className="text-2xl md:text-4xl font-bold tracking-tight mb-4 text-white group-hover:text-[#d3e97a] transition-colors">{project.title}</h3>
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white group-hover:text-[#d3e97a] transition-colors">{project.title}</h3>
                     <p className="text-zinc-400 text-sm md:text-base leading-relaxed mb-8">
                        {project.description}
                     </p>
@@ -312,7 +312,7 @@ export default async function Home() {
       */}
       <section className="px-6 py-20 md:py-32 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
         <div className="lg:col-span-4">
-          <h2 className="text-2xl md:text-4xl font-bold tracking-tight text-white mb-4">The Professional Journey</h2>
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white mb-4">The Professional Journey</h2>
           <div className="w-12 h-1 bg-zinc-800 hidden lg:block mt-6"></div>
         </div>
 
@@ -358,7 +358,7 @@ export default async function Home() {
            <div className="text-[10px] md:text-xs font-bold tracking-widest text-zinc-500 uppercase">
              CONNECT & COLLABORATE
            </div>
-           <h2 className="text-3xl md:text-5xl lg:text-5xl font-bold tracking-tight text-white max-w-2xl">
+           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white max-w-2xl">
              Ready to start your next artisanal digital journey?
            </h2>
            <p className="text-zinc-400 text-sm md:text-base max-w-xl leading-relaxed mt-4">
