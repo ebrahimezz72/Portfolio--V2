@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { supabase } from "@/lib/supabase/client";
-
+//nananana
 export default async function About() {
   const [
     { data: profile },
