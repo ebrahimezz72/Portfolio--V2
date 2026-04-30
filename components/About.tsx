@@ -12,7 +12,7 @@ export default async function About() {
     supabase.from('skills').select('id, name, skill_categories(name)').order('display_order', { ascending: true }).limit(8),
     supabase.from('milestones').select('*').order('year', { ascending: false })
   ]);
-
+///sss
   const paragraphs = profile?.bio ? profile.bio.split("\n").filter((p: string) => p.trim() !== '') : [];
 
   return (
